@@ -1,8 +1,8 @@
 import { Food, CreateFood, DeleteFood } from "../../domain/model";
-import { FoodsDataSource } from "./foodDataSource";
+import { FoodsRepositories } from "../../domain/repository";
 
 
-export class FoodRepository implements FoodsDataSource {
+export class FoodRepository implements FoodsRepositories {
     private static instance: FoodRepository | null = null;
     private apiUrl: string;
 
@@ -16,7 +16,6 @@ export class FoodRepository implements FoodsDataSource {
         }
         return FoodRepository.instance;
     }
-
 
 
     async createFood(data: CreateFood): Promise<Food> {
