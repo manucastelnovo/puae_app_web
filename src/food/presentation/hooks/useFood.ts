@@ -1,5 +1,5 @@
 
-import { useAppDispatch } from "../../../hooks/store";
+import { useAppDispatch } from "../../../services/store/store";
 import { FoodId } from "../../domain/model";
 import {  deleteFoodById } from "../../data/store/slices";
 

@@ -11,7 +11,7 @@ import {
     Badge
 
 } from '@tremor/react';
-import { useAppDispatch, useAppSelector } from '../../hooks/store';
+import { useAppDispatch, useAppSelector } from '../../services/store/store';
 import { UserId, deleteUserById } from '../store/users/slices';
 
 

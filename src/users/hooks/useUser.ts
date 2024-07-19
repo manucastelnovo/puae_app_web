@@ -1,5 +1,5 @@
 import { UserId, deleteUserById } from "../store/users/slices";
-import { useAppDispatch } from "../../hooks/store";
+import { useAppDispatch } from "../../services/store/store";
 
 export const useUserActions = () => {
     const dispatch = useAppDispatch();
