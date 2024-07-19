@@ -1,6 +1,6 @@
 import { configureStore,createListenerMiddleware } from "@reduxjs/toolkit";
 import usersReducer, { deleteUserById } from '../users/store/users/slices'
-import foodsReducer from '../food/store/foods/slices'
+import foodsReducer from '../food/data/store/slices'
 
 // const persistanceLocalStorageMiddleware = (store)=> (next)=> (action)=>{
 //     console.log(store.getState())
